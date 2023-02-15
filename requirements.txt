@@ -1,0 +1,3 @@
+opencv-oython
+ssl
+urllib

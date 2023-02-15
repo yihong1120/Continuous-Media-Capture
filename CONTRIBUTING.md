@@ -11,11 +11,11 @@ There are a few ways you can contribute to this project:
 
 3. Contribute code: If you would like to contribute code to the project, please follow these steps:
 
-> * Fork the project repository
-> * Create a new branch for your changes
-> * Make your changes and commit them to your branch
-> * Push your changes to your fork
-> * Open a pull request on the main repository
+	* Fork the project repository
+	* Create a new branch for your changes
+	* Make your changes and commit them to your branch
+	* Push your changes to your fork
+	* Open a pull request on the main repository
 
 ## Code Style
 When contributing code to the project, please follow these guidelines:

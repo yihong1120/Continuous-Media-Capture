@@ -3,6 +3,7 @@ import os
 import ssl
 import time
 from urllib.request import urlretrieve
+from urllib.parse import urlparse
 from typing import Union
 
 
@@ -30,7 +31,12 @@ def download_media(url: str, save_dir: str, media_type: str) -> None:
         if not success:
             raise ValueError(f"Failed to read video at {url}")
         vidcap.release()
+    # Modify in download_media function
     elif media_type == 'image':
+        # Check the scheme of URL
+        parsed_url = urlparse(url)
+        if parsed_url.scheme not in ('http', 'https'):
+            raise ValueError(f"Invalid scheme in URL {url}")
         # Download an image from the given URL
         image, _ = urlretrieve(url)
     else:
